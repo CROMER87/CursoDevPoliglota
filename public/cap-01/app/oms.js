@@ -1,3 +1,3 @@
-function calculaImc(peso, altura) {
-    return peso / (altura * altura);
+export function calculeImc(param) {
+    return param.peso / (param.altura * param.altura);
 }
