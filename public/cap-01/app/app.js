@@ -1,18 +1,19 @@
+import { calculaImc } from './oms.js';
 import { Conta } from './models/conta.js';
-import { calculeImc } from './oms.js';
 
-
-const imc = calculeImc({peso:74, altura:1.63});
+const imc = calculaImc({ peso: 68, altura: 1.71 });
 console.log(imc);
 
-
-
-const conta  = new Conta ({
-    titular: 'Flávio',
+const conta = new Conta({ 
+    titular: 'Flávio', 
     banco: '123',
-    agencia: '456',
-    numero: '789'
-
+    agencia: '456', 
+    numero: '789',
 });
 
 console.log(conta);
+
+const object1 = { nome: 'Flávio' };
+const object2 = { peso: 78 };
+Object.assign(object1, object2);
+console.log(object1);
